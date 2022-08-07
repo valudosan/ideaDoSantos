@@ -79,3 +79,10 @@ img {
     width: 80%;
   }
 }
+.shampoo {
+  background-image: linear-gradient(pink, violet);
+  transform: translate(5px, 30px);
+}
+.center {
+  transition: all 4s;
+}
