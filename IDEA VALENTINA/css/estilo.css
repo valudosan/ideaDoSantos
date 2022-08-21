@@ -1,0 +1,88 @@
+html {
+  background-color: #deded8;
+  font-family: trebuchet, geneva, sans-serif;
+}
+body {
+  margin: 0;
+}
+article,
+aside,
+footer,
+header {
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+header {
+  background-color: rgb(176, 135, 182);
+  color: #ccc;
+  text-align: center;
+  border-bottom: 1px solid;
+}
+aside {
+  background-color: white;
+}
+
+nav {
+  display: flex;
+  background-color: black;
+  padding: 10px 0;
+  grid-area: nav;
+}
+nav a {
+  flex: auto;
+  text-align: center;
+  background: #ccc;
+  color: lightcoral;
+  margin: 0 5px;
+  padding: 5px 0;
+  text-decoration: none;
+}
+nav a:hover {
+  outline: 1px solid rgb(190, 73, 145);
+  color: red;
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 30rem) {
+  body {
+    display: flex;
+    flex-direction: column;
+    max-width: 75rem;
+    margin: auto;
+  }
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    border-bottom: 0.5rem solid;
+  }
+  nav,
+  header {
+    order: -1;
+  }
+  article {
+    flex: 75%;
+  }
+  aside {
+    flex: 25%;
+  }
+}
+img {
+  width: 100%;
+}
+.footer {
+  margin-top: 11rem;
+}
+@media (min-width: 40em) {
+  /* Probably some parent element that limits the img width */
+  main {
+    width: 80%;
+  }
+}
+.shampoo {
+  background-image: linear-gradient(pink, violet);
+  transform: translate(5px, 30px);
+}
+.center {
+  transition: all 4s;
+}
